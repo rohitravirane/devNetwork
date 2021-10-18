@@ -7,7 +7,7 @@ import { getGithubRepos } from "../../actions/profile";
 const GithubRepos = ({ username, getGithubRepos, repos }) => {
   useEffect(() => {
     getGithubRepos(username);
-  }, [getGithubRepos]);
+  }, [getGithubRepos, username]);
 
   return (
     <div>
