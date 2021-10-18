@@ -12,7 +12,7 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 import Moment from "react-moment";
-import PropTypes from "prop-types";
+// import PropTypes from "prop-types";
 import GithubRepos from "./GithubRepos";
 
 const ProfileTop = ({
@@ -277,6 +277,6 @@ const ProfileTop = ({
   );
 };
 
-ProfileTop.propTypes = {};
+// ProfileTop.propTypes = {};
 
 export default ProfileTop;
