@@ -1,0 +1,124 @@
+.signup-main {
+  height: 91vh;
+  display: flex;
+  font-family: "Inter", "Inter UI", Arial;
+  justify-content: center;
+  align-items: center;
+  background: #f6f8ff;
+}
+
+#login-form {
+  --primary: #6d58ff;
+  --primary-dark: #362a89;
+  --dark: #2b3044;
+  --grey-dark: #404660;
+  --grey: #8a91b4;
+  --grey-light: #a6accd;
+  --light: #bbc1e1;
+  --pale: #eceffc;
+  --white: #ffffff;
+  --red: #f04949;
+  width: 100%;
+  margin-bottom: 80px;
+  max-width: 180px;
+}
+
+#login-form h1 {
+  margin: 24px 0;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: var(--dark);
+}
+#login-form .input {
+  position: relative;
+}
+#login-form .input label {
+  pointer-events: none;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  position: absolute;
+  top: 8px;
+  left: 0;
+  transform-origin: 0 50%;
+  transform: translateY(var(--label-y, 0)) scale(var(--label-scale, 1))
+    translateZ(0);
+  transition: transform 0.3s, color 0.3s;
+  color: var(--label-color, var(--grey-light));
+}
+#login-form .input input {
+  width: 100%;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+#login-form .input input:not(:-moz-placeholder-shown) + label {
+  --label-y: -17px;
+  --label-scale: 0.8;
+  --label-color: var(--grey);
+}
+#login-form .input input:not(:-ms-input-placeholder) + label {
+  --label-y: -17px;
+  --label-scale: 0.8;
+  --label-color: var(--grey);
+}
+#login-form .input input:not(:placeholder-shown) + label,
+#login-form .input input:focus + label {
+  --label-y: -17px;
+  --label-scale: 0.8;
+  --label-color: var(--grey);
+}
+#login-form .input.email {
+  margin-bottom: 16px;
+}
+#login-form .input.email input {
+  background: none;
+  outline: none;
+  border: none;
+  color: var(--grey-dark);
+  font-weight: 500;
+  font-family: inherit;
+  font-size: 13px;
+  letter-spacing: 0.025em;
+  line-height: 22px;
+  caret-color: var(--primary);
+  padding: 7px 0 5px 0;
+  box-shadow: inset 0 -1px 0 0 var(--grey);
+}
+#login-form .input.password {
+  height: 34px;
+  margin-bottom: 16px;
+}
+
+#login-form .input.password .cursor {
+  position: absolute;
+  height: 15px;
+  width: 1px;
+  left: 0;
+  top: 10px;
+  background: var(--primary);
+  opacity: 0;
+  transform: translateX(var(--cursor-x, 0));
+  transition: transform var(--cursor-duration, 0.1s);
+}
+
+#login-form button {
+  border: none;
+  outline: none;
+  padding: 10px 0;
+  margin: 24px 0 0 0;
+  border-radius: 7px;
+  color: var(--c, #fff);
+  width: 100%;
+  font-size: 14px;
+  line-height: 16px;
+  position: relative;
+  font-family: inherit;
+  font-weight: 500;
+  background: var(--b, var(--primary-dark));
+  transition: color 0.3s, background 0.3s;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  cursor: pointer;
+}
